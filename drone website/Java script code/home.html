@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone website</title>
+    <!-- Link your CSS file here -->
+    <link rel="stylesheet" href="homemodule.css">
+</head>
+<body>
+    <img class="logo" src="C:\Users\Prateek\Downloads\a1\SKY (1).png" alt="Logo">
+
+    <header>
+        <h1>Drone Delivery System</h1>
+    </header>
+
+    <nav>
+        <a href="#login">Login</a>
+        <a href="#order">Order</a>
+        <a href="#photos">Photos</a>
+        <a href="#videos">Videos</a>
+        <a href="#case-studies">Case Studies</a>
+    </nav>
+
+    <section id="login">
+        <h2>Login</h2>
+
+    <form id="loginForm">
+        <h2>Login</h2>
+        <label for="loginUsername">Username:</label>
+        <input type="text" id="loginUsername" required>
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" required>
+
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <form id="signupForm">
+        <h2>Signup</h2>
+        <label for="signupUsername">Username:</label>
+        <input type="text" id="signupUsername" required>
+
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" required>
+
+        <button type="button" onclick="signup()">Signup</button>
+    </form>
+
+    <script>
+        function login() {
+            var username = document.getElementById("loginUsername").value;
+            var password = document.getElementById("loginPassword").value;
+
+            // Perform login validation (placeholder)
+            if (username === "example" && password === "password") {
+                alert("Login successful!");
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+
+        function signup() {
+            var username = document.getElementById("signupUsername").value;
+            var password = document.getElementById("signupPassword").value;
+
+            // Perform signup logic (placeholder)
+            alert("Signup successful! Username: " + username);
+        }
+    </script>
+
+    </section>
+
+    <h2>Medicine Order Form</h2>
+
+    <form action="process_order.php" method="post">
+        <label for="medicine_name">Medicine Name:</label>
+        <input type="text" id="medicine_name" name="medicine_name" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required>
+
+        <label for="delivery_address">Delivery Address:</label>
+        <textarea id="delivery_address" name="delivery_address" rows="4" required></textarea>
+
+        <label for="payment_method">Payment Method:</label>
+        <select id="payment_method" name="payment_method" required>
+            <option value="credit_card">Credit Card</option>
+            <option value="debit_card">Debit Card</option>
+            <option value="paypal">PayPal</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+    </form>
+   <section id="photos">
+        <h2>Photos</h2>
+        <!-- Add advanced drone photos here -->
+        <img src="C:\Users\Prateek\Downloads\a1\drone3.png.jpg" alt="Drone Photo 1">
+        <img src="C:\Users\Prateek\Downloads\a1\war.png'.jpg" alt="Drone Photo 2">
+<img src="C:\Users\Prateek\Downloads\a1\drone1.png.jpg" alt="Drone Photo 1">
+<img src = "C:\Users\Prateek\Downloads\a1\drone.png.jpg" alt ="Drone photo 2">
+    </section>
+
+    <section id="videos">
+        <h2>Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rCTiZCMNKII?si=vjs2efQR6zuq9rXv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <video width="320" height="240" controls>
+            <source src="drone_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="case-studies">
+        <h2>Case Studies</h2>
+        <div class="case-study">
+            <h3>Case Study 1</h3>
+            <p>Case Study: The Russia-Ukraine Conflict (2022 - Present)
+Background:
+
+The current conflict between Russia and Ukraine has its roots in complex historical, political, and cultural factors. Tensions rose after the dissolution of the Soviet Union in 1991, with Ukraine seeking closer ties to the West, while Russia desired to maintain its sphere of influence in the region. The conflict escalated in 2014 with Russia's annexation of Crimea and its support for separatists in eastern Ukraine.
+
+Key Events:
+
+February 24, 2022: Russia launched a full-scale invasion of Ukraine, citing concerns about NATO expansion and threats to its security.
+Initial Russian offensive: Russian forces aimed to capture major Ukrainian cities, including Kyiv, but faced fierce resistance from the Ukrainian military and civilian population.
+Global response: The international community condemned the invasion and imposed severe sanctions on Russia, targeting its economy, financial institutions, and individuals.
+Shifting focus: After failing to achieve its initial objectives, Russia shifted its focus to eastern Ukraine, engaging in a protracted war of attrition.
+Humanitarian crisis: The conflict has caused a devastating humanitarian crisis, with millions displaced internally and as refugees, facing food insecurity, and limited access to healthcare.
+Negotiations and diplomacy: Ongoing attempts at peace negotiations have yielded limited progress, with both sides holding onto their core demands.
+Impact:
+
+The Russia-Ukraine conflict has had far-reaching consequences:
+
+Global security: The war has shaken the foundations of European security and raised concerns about a wider conflict between Russia and NATO.
+Economic repercussions: The war has disrupted global supply chains, leading to rising food and energy prices, impacting economies worldwide.
+Energy crisis: Sanctions on Russia have exacerbated the global energy crisis, pushing up fuel prices and raising concerns about energy security.
+Displacement and suffering: Millions of Ukrainians have been displaced internally or fled as refugees, facing immense hardship and uncertainty.
+Uncertainties:
+
+The future trajectory of the conflict remains uncertain. Key questions include:
+
+Will the war escalate further?
+What are the prospects for a negotiated settlement?
+How long will the conflict last and what will be its long-term consequences?
+Conclusion:
+
+The Russia-Ukraine conflict is a complex and evolving situation with significant global ramifications. Understanding its historical context, key events, and ongoing challenges is crucial for navigating the complexities of this ongoing crisis.
+
+Additional Points to Consider:
+
+The role of information warfare and propaganda in the conflict.
+The impact of the conflict on cyber security and potential cyberattacks.
+The long-term consequences for Ukraine's infrastructure and economy.
+The potential for the conflict to spill over into neighboring countries.
+Disclaimer:
+
+This case study provides a brief overview of the conflict and is not intended to be exhaustive. The situation is constantly evolving, and it is important to consult reliable sources for the latest information and updates.</p>
+        </div>
+    <section id="videos">
+        <h2>Videos</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vF2BJVRleVM?si=QF-1BeFKn10D0Bcx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        <video width="320" height="240" controls>
+            <source src="drone_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+        <div class="case-study">
+            <h3>Case Study 2</h3>
+            <p>the 2023–2024 Manipur violence, which has had significant repercussions in the state of Manipur, India. Here are some key points from various sources:
+
+Background:
+Cause: The violence erupted due to ethnic conflict between the Meitei people (who predominantly reside in the Imphal Valley) and the Kuki-Zo tribal community from the surrounding hills.
+Affirmative Action Controversy: The proximate cause was a row over an affirmative action measure. The Manipur High Court ordered the state government to recommend Scheduled Tribe (ST) status for the Meitei community, which led to tensions1.
+Other Issues: Prior to the violence, other issues were festering, including indigenous land rights concerns for the Kuki people in the hill districts1.
+Extent of Violence:
+Casualties: As of 15 September, 175 people have been killed, and 1,108 others were injured. 32 people are still missing.
+Property Damage: 4,786 houses were burnt, and 386 religious structures, including temples and churches, were vandalized.
+Displacement: The violence left more than 70,000 people displaced from their homes1.
+Chronology of Events:
+May 3, 2023: Clashes erupted between Kuki and Meitei groups near the border between Churachandpur district and Bishnupur district. House burnings followed.
+Spread of Violence: The violence quickly spread to the Kuki-dominated Churachandpur town and the Meitei-dominated Imphal Valley, targeting minority communities in each area.
+Fatalities: Within a week, 77 Kukis and 10 Meiteis were killed1.
+Ethnic Composition:
+The Imphal Valley, dominated by the non-tribal Meitei community, accounts for about 10% of Manipur’s landmass.
+The hills, inhabited by recognized tribes (about 35% of the geographical area), are represented by fewer MLAs.
+Meiteis are mainly Hindus, while the recognized tribes are mainly Christians2.
+Long-standing Historical Context:
+The kingdom of Kangleipak (part of present-day Manipur) faced attacks from Naga tribes from the northern hills.
+The British political agent brought Kuki-Zomi from Burma to act as a buffer territory between Meiteis and Nagas.
+The Kukis were settled along the ridges to protect the valley2.
+The Manipur violence underscores the complexities of ethnic tensions, historical grievances, and demands for tribal status. It has had devastating consequences for lives, property, and social fabric in the region.</p>
+        </div>
+    </section>
+    
+    <!-- Link your JavaScript file here -->
+    <script src="home.js"></script>
+</body>
+</html>
